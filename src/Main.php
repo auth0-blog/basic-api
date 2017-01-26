@@ -6,11 +6,11 @@ use Exception;
 
 class Main {
 
-    public function getCategories() {
+    public function getCategories(): array {
         return $this->getCategoryData();
     }
 
-    private function getCategoryData() {
+    private function getCategoryData(): array {
         return  [
             "explicit",
             "dev",
@@ -31,7 +31,7 @@ class Main {
         ];
     }
 
-    public function getRandomJokes($randomNumber) {
+    public function getRandomJokes(int $randomNumber): string {
 
         if( !is_integer($randomNumber)) {
             throw new Exception("The random number should be an integer. Please try again.");
