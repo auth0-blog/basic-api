@@ -33,10 +33,6 @@ class Main {
 
     public function getRandomJokes(int $randomNumber): string {
 
-        if( !is_integer($randomNumber)) {
-            throw new Exception("The random number should be an integer. Please try again.");
-        }
-
         $jokes = [
           "Jon Skeet’s code doesn’t follow a coding convention. It is the coding convention.",
           "Jon Skeet can divide by Zero.",
